@@ -1,11 +1,16 @@
 
     
-let  min  = prompt("entre un chiffre petit");
-let  max  = prompt("entre un  second chiffre grand");
-let  current  = prompt("allez encore un dernier cette fois un chiffre entre les deux autres");
+let min = Number (prompt ("Your min number"));
+let max = Number (prompt ("Your max number"));
 
 if (min > max){
-   alert("c'est bien");
+    console.log("you're dumb");
+}
+else if (min < max){
+let current = Number (prompt ("Your number between " + min + " and " + max));
+   if ((min < current) && (current < max)){
+    console.log(current);
+   }
 }
 
 
